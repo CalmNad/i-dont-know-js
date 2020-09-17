@@ -28,7 +28,7 @@ const downloader = {
         hostnames: {},
     },
     iterator: undefined,
-    generator: function* (urls) {
+    generator: function *(urls) {
         while (urls.length) {
             // TBD: в продуктовом решении возможно надо заменить reduce на самописный вариант
             // определяется количеством записей в urls (если много - reduce большую часть unservedUrls
